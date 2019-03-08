@@ -31,7 +31,7 @@ public class Application {
     	JSONObject response = new JSONObject();
     	response.put("req-time", new Date());
     	response.put("version", VERSION);
-    	logger.info("Processing request for : / , Sending response back to client: ", response.toString());
+    	logger.info("Processing request for : /version , Sending response back to client: ", response.toString());
     	return response.toString();
     }
     
