@@ -1,0 +1,12 @@
+ apiVersion: v1
+ kind: Pod
+ metadata:
+   name: spring-boot-k8s
+   labels:
+     app: k8s-demo
+ spec:
+   containers:
+     - name: gs-spring-boot-docker-container
+       image: zamamb/gs-spring-boot-docker
+       ports:
+         - containerPort: 8001
